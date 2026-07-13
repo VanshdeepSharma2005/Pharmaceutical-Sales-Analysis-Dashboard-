@@ -130,7 +130,4 @@ If you have PowerBI desktop installed, download the `pharma-analysis.pbix` from 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sssingh/)
 [![website](https://img.shields.io/badge/web_site-8B5BE8?style=for-the-badge&logo=ko-fi&logoColor=white)](https://sunilssingh.me)
 
-## Credits
-- Dataset sourced from [Foresight BI](https://foresightbi.com.ng/practice-data/3-datasets-for-your-portfolio/)
 
-[Back To The Top](#pharmaceutical-sales-analysis)
