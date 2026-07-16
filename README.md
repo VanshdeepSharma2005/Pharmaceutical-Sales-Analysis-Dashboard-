@@ -99,20 +99,11 @@ The tables with the prefix `DIM` are dimension tables, and `FACT` is the fact ta
 ### Report Creation [PowerBI Desktop]
 Three interactive reports/dashboards (report pages) will be created to implement the proposed solution. Refer to [Table-3: Proposed Solution](#solution-approach) for detailed requirements and the corresponding proposed solution. 
 
-#### 1. Executive Summary Report [DM-DA01-SOL-1]
+####  Executive Summary Report [DM-DA01-SOL-1]
 This high-level report shows the overall sales figures and elements at a glance.
 
 <img src="https://github.com/sssingh/pharmaceutical-sales-analysis-powerbi/blob/main/images/exec-summary-page.png?raw=true"/>
 
-#### 2. Distributor & Customer Analysis Report [DM-DA01-SOL-2]
-This more granular detailed report analyses data from the company distributors' and customers' perspectives. Sales by the distributor can be drilled down to specific product levels.
- 
- <img src="https://github.com/sssingh/pharmaceutical-sales-analysis-powerbi/blob/main/images/dist-cust-analysis-page.png?raw=true"/>
- 
- #### 3. Sales  Team Performance Report [DM-DA01-SOL-3] 
- This is another detailed report that analyses the performance of the company's sales team. Sales by the sales team can be drilled down to product class and specific product levels.
- 
- <img src="https://github.com/sssingh/pharmaceutical-sales-analysis-powerbi/blob/main/images/sales-team-perform-page.png?raw=true"/>
 
 ## How To Use
 ### Read-only direct access via the web (Recommended)
