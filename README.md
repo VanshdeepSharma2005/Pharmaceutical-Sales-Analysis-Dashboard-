@@ -41,7 +41,7 @@ The project uses **Python (Pandas)** for data cleaning, preprocessing, and explo
 Pharmaceutical-Sales-Analysis-Dashboard
 │
 ├── data
-│   └── pharma-data.csv
+│   └── pharma-data.csv.zip
 │
 ├── notebook
 │   └── data-exploration.ipynb
