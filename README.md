@@ -106,7 +106,7 @@ This high-level report shows the overall sales figures and elements at a glance.
 
 
 ## How To Use
-### Read-only direct access via the web (Recommended)
+### Read-only direct access via the web 
 [![Open In Power Bi](https://img.shields.io/badge/open_in_power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiMTQ1YjJiODctNmJjMS00NGYwLWFjMWEtNGE5YzdkYWUyYzIwIiwidCI6ImFlZDI3MWNkLTYzOTgtNDllZi1hOWNmLTQ4NDIyMTAxZTE0ZSIsImMiOjEwfQ%3D%3D)  
 Explore the fully functional report with native PowerBI interactive experience.
 
