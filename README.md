@@ -1,124 +1,218 @@
-[![Open In Power Bi](https://img.shields.io/badge/open_in_power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiMTQ1YjJiODctNmJjMS00NGYwLWFjMWEtNGE5YzdkYWUyYzIwIiwidCI6ImFlZDI3MWNkLTYzOTgtNDllZi1hOWNmLTQ4NDIyMTAxZTE0ZSIsImMiOjEwfQ%3D%3D)
+# 💊 Pharmaceutical Sales Analysis Dashboard
 
-# Pharmaceutical Sales Analysis
-In this ‘Data Analysis’ project, we’ll analyze a global Pharmaceutical Manufacturing Company's raw sales data and draw meaningful insights.
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
 
+---
 
-## Features
-⚡PowerBI Desktop   
-⚡PowerQuery Editor [For data-transformation/data-modeling]  
-⚡PowerBI Service [For making the report accessible on the web without PowerBI login]  
-⚡Multipage fully Interactive Report [For drawing insights and analysis] 
+# 📌 Project Overview
 
-## Table of Contents
-- [Introduction](#introduction) 
-- [Objective](#objective)
-- [Dataset](#dataset)
-- [Solution Approach](#solution-approach)
-- [How To Use](#how-to-use)
-- [License](#license)
-- [Credits](#credits)
-- [Get in touch](#get-in-touch)
+The Pharmaceutical Sales Analysis Dashboard is an end-to-end data analytics project developed to analyze pharmaceutical sales data and generate actionable business insights.
 
+The project uses **Python (Pandas)** for data cleaning, preprocessing, and exploratory analysis, while **Power BI** is used to build an interactive dashboard for monitoring sales performance across products, distributors, customers, channels, and geographic regions.
 
-## Introduction
-* `Datamatrix-ml Pharmaceuticals` is one of the leading Pharmaceutical Manufacturing companies with a global presence. 
-* Their Markets are divided into different regions across the world. One of those regions manages the German and Poland Markets. 
-* Company does not sell directly to customers. Instead, they work with a couple of Distributors in all their regions. 
-* They have an agreement with each distributor to share their Sales Data. This is to enable them to gain insights up to the retail level. This data is made available to them in CSV format.
+---
 
-## Objectives
-The firm has asked us to perform in-depth data analysis to get insight into company sales performance. Specifically, below are the essential requirements to be satisfied…
-|Requirement ID|For Whom|Requirement Description|
-|:--|:---|:--|
-DM-DA01-REQ-1|Executive Committee|A high-level overview showing `company’s overall sales performance by `year` by `month,` by `customer cities,` by `channel,` by `sub-channel .`Should be able to quickly see `top drug class by sales`, `top drug by sales`, `top customer city by sales`
-DM-DA01-REQ-2|Sales Manager/Sales Rep|A detailed overview showing sales `by distributors and product,` `top 5 product, customer and cities`, sales numbers split by `channels and sub-channels.`
-DM-DA01-REQ-3|Head of Sales|A detailed report of `sales by sales-team split by product` and `sales by sales-team split by product class.` <br> A detailed analysis showing `Top sales managers`, `Top sales reps,` `Top product split by sales team contributions` answering. <br> An ability to filter/slice data by `year` and `months.`   
+# 🎯 Business Objectives
 
-***Table-1 : Requirements***
+- Analyze overall pharmaceutical sales performance.
+- Identify top-performing products and product classes.
+- Evaluate distributor and customer performance.
+- Compare sales across different channels and sub-channels.
+- Analyze country and city-wise sales distribution.
+- Provide interactive dashboards for business decision-making.
 
-## Dataset
-The dataset is sourced from each distributor. It contains Pharmaceutical Manufacturing Company’s, Wholesale-Retail Data. The field description of the raw data is given below. The raw dataset `pharma-data.csv` can be downloaded from [here](https://drive.google.com/file/d/1npKF_C2tG5psY-at4wvpEgh6T-7KHxEZ/view?usp=share_link)
+---
 
-|Field|Description|
-|:---|:--|
-|Distributor| Name of Wholesaler|
-|Customer Name| Name of customer|
-|City| Customer's city|
-|Country| Customer's country|
-|Latitude| Customer's Geo Latitude|
-|Longitude| Customer's Geo Longitude|
-|Channel|Class of buyer (Hospital, Pharmacy)|
-|Sub-channel|Sector of the buyer (Government, Private, etc.)|
-|Product Name|Name of Drug|
-|Product Class|Class of Drug (Antibiotics, etc.)|
-|Quantity|Quantity purchased|
-|Price|Price product was sold for|
-|Sales|Amount made from sale|
-|Month|Month sale was made|
-|Year|Year sale was made|
-|Name of Sales Rep|Name of the Sales rep who facilitated the sale|
-|Manager|Sales rep's Manager Name|
-|Sales Team|Sale rep's team|
-***Table-2 : Data Definition***
+# 🛠️ Tech Stack
 
-## Solution Approach 
+| Tool | Purpose |
+|-------|----------|
+| Python | Data Cleaning & Analysis |
+| Pandas | Data Manipulation |
+| Jupyter Notebook | Data Exploration |
+| Power BI | Dashboard Development |
 
-|Requirement ID|Solution ID|Proposed Solution|
-|:--|:---|:--|
-|DM-DA01-REQ-1|DM-DA01-SOL-1|An `Executive Summary` PowerBI dashboard/report page will be built to show a high-level overview of sales data in interactive visuals per the requirements. A `year` filter will be provided to filter the data by a particular or combination of years |
-|DM-DA01-REQ-2|DM-DA01-SOL-2|A `Distributor & Customer Analysis` PowerBI dashboard/report page will be provided with interactive visuals showing data as per the requirement|
-|DM-DA01-REQ-3|DM-DA01-SOL-3|A `Sales Team Performance` PowerBI dashboard/report page will be provided with interactive visuals showing data as per the requirement. `year` and `month` slicers will be provided to slice/filter data by year and/or months|
+---
 
-***Table-3 : Proposed Solution***
+# 📂 Repository Structure
 
-### Exploratory Data Analysis (EDA) [pandas]
-To understand, be familiar with and check the sanity of the given data, the first step is EDA. This project's initial data exploration has been carried out using the `pandas` python package. Here, in general, we are checking... 
- * Presence of any missing values 
- * Any unusual value (outliers) 
- * Incorrect values (e.g., sales column, we see -ve numbers)
- * Determine `categorical` and `numeric` columns
- * Determine dimensions of categorical columns and range of numeric columns
-Note that these steps can be performed using `PowerQuery Editor` and/or excel; however, `pandas` makes it much easier and faster; on top of that, `pandas` can handle massive datasets.
+```
+Pharmaceutical-Sales-Analysis-Dashboard
+│
+├── data
+│   └── pharma-data.csv
+│
+├── notebook
+│   └── data-exploration.ipynb
+│
+├── power bi
+│   └── pharmaceutical_sales_analysis.pbix
+│
+├── images
+│   ├── executive_summary.png
+│   └── distributor_customer_analysis.png
+│
+├── README.md
+└── LICENSE
+```
 
-EDA steps can be found in the `data-exploration.ipynb` notebook.
+---
 
-### Data Cleaning and Transform [PowerQuery Editor]
-The provided dataset was relatively clean and well organized; hence only a little work was required in this step; the following steps were carried out...
-* Correct column heading provided
-* Correct data type is assigned to columns
+# 📊 Dataset
 
-### Data Model Creation [PowerBI Desktop]
-* The provided data is in a single table format. The exploration revealed that it contains both categorical (`dimensions`) and numeric (`facts`) data. 
-* We build a data model where dimensions and facts are separated, then they are linked together by logical relationship to form a `star schema.` The resultant data model is shown below...
+The dataset contains pharmaceutical sales transactions from **2017–2020** and includes information such as:
 
-<img src="https://github.com/sssingh/pharmaceutical-sales-analysis-powerbi/blob/main/images/data-model.png?raw=true"/>
+- Distributor
+- Customer
+- Product Name
+- Product Class
+- Channel
+- Sub-channel
+- Country
+- City
+- Sales Team
+- Sales Manager
+- Sales Representative
+- Month
+- Year
+- Sales Amount
 
-The tables with the prefix `DIM` are dimension tables, and `FACT` is the fact table.
+---
 
-### Report Creation [PowerBI Desktop]
-Three interactive reports/dashboards (report pages) will be created to implement the proposed solution. Refer to [Table-3: Proposed Solution](#solution-approach) for detailed requirements and the corresponding proposed solution. 
+# 🧹 Data Preparation
 
-####  Executive Summary Report [DM-DA01-SOL-1]
-This high-level report shows the overall sales figures and elements at a glance.
+Data preprocessing was performed using **Pandas**.
 
-<img src="https://github.com/sssingh/pharmaceutical-sales-analysis-powerbi/blob/main/images/exec-summary-page.png?raw=true"/>
+The following tasks were completed:
 
+- Imported and inspected the dataset
+- Checked data types
+- Identified missing values
+- Removed duplicate records
+- Validated data consistency
+- Prepared the dataset for Power BI
 
-## How To Use
-### Read-only direct access via the web 
-[![Open In Power Bi](https://img.shields.io/badge/open_in_power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiMTQ1YjJiODctNmJjMS00NGYwLWFjMWEtNGE5YzdkYWUyYzIwIiwidCI6ImFlZDI3MWNkLTYzOTgtNDllZi1hOWNmLTQ4NDIyMTAxZTE0ZSIsImMiOjEwfQ%3D%3D)  
-Explore the fully functional report with native PowerBI interactive experience.
+---
 
-### Full access via PowerBI desktop
-If you have PowerBI desktop installed, download the `pharma-analysis.pbix` from the repo and open it using PowerBI desktop. There is no need to download the raw dataset; the `pbix` files contain the complete normalized data model, feel free to modify and experiment with it.   
+# 📈 Dashboard 1 — Executive Summary
 
+This dashboard provides an overview of overall business performance.
 
+### Highlights
 
-## Get in touch
-[![email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sunil@sunilssingh.me)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/@thesssingh)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sssingh/)
-[![website](https://img.shields.io/badge/web_site-8B5BE8?style=for-the-badge&logo=ko-fi&logoColor=white)](https://sunilssingh.me)
+- Year Filter
+- Total Sales KPI
+- Top Product Class
+- Top Product
+- Top City
+- Sales by Year
+- Sales by Month
+- Sales by Country
+- Sales by Channel
+- Sales by Sub-channel
+- Sales by Top Cities
 
+### Dashboard Preview
 
+![Executive Summary](images/executive_summary.png)
+
+---
+
+# 📈 Dashboard 2 — Distributor & Customer Analysis
+
+This dashboard focuses on distributor and customer performance.
+
+### Highlights
+
+- Top Distributors
+- Top Customers
+- Sales by Distributor
+- Sales by Product
+- Sales by Channel
+- Sales by Sub-channel
+- Distributor Sales Matrix
+- Geographic Distribution of Customers
+
+### Dashboard Preview
+
+![Distributor & Customer Analysis](images/distributor_customer_analysis.png)
+
+---
+
+# 💡 Key Insights
+
+- Total sales exceeded **$11.80 Billion**.
+- Analgesics was the highest-selling product class.
+- Ionclotide generated the highest product revenue.
+- Butzbach recorded the highest city-wise sales.
+- Gerlach LLC was the top-performing distributor.
+- Germany contributed the majority of overall sales.
+- Retail accounted for the largest share among sub-channels.
+- Hospital and Pharmacy were the primary sales channels.
+
+---
+
+# 📚 Skills Demonstrated
+
+- Data Cleaning
+- Data Validation
+- Data Preparation
+- Exploratory Data Analysis
+- Power BI Dashboard Development
+- Data Modeling
+- DAX Measures
+- Business Intelligence
+- KPI Reporting
+- Business Insight Generation
+
+---
+
+# 🚀 Future Improvements
+
+- Add sales forecasting.
+- Integrate real-time data sources.
+- Include profitability analysis.
+- Build customer segmentation dashboards.
+
+---
+
+# ▶️ Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/VanshdeepSharma2005/Pharmaceutical-Sales-Analysis-Dashboard.git
+```
+
+### Install Dependencies
+
+```bash
+pip install pandas
+```
+
+### Open the Notebook
+
+```
+notebook/data-exploration.ipynb
+```
+
+### Open the Dashboard
+
+```
+power bi/pharmaceutical_sales_analysis.pbix
+```
+
+using **Power BI Desktop**.
+
+---
+
+# 👨‍💻 Author
+
+**Vanshdeep Sharma**
+
+- GitHub: https://github.com/VanshdeepSharma2005
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
