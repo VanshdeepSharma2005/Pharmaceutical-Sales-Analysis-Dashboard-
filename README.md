@@ -119,7 +119,7 @@ This dashboard provides an overview of overall business performance.
 
 ---
 
-# 📈 Dashboard 2 — Distributor & Customer Analysis
+# 📈 Dashboard 2 — Distributor & Sales Team Analysis
 
 This dashboard focuses on distributor and customer performance.
 
@@ -136,7 +136,7 @@ This dashboard focuses on distributor and customer performance.
 
 ### Dashboard Preview
 
-![Distributor & Customer Analysis](images/distributor_customer_analysis.png)
+![Distributor & Sales Team Analysis](images/distributor_and_sales_team_analysis.png)
 
 ---
 
